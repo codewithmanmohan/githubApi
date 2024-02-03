@@ -1,0 +1,66 @@
+body {
+  background-color: blue;
+  color: whitesmoke;
+}
+
+input[type="text"] {
+  width: 130px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 4px;
+  font-size: 24px;
+  background-color: blueviolet;
+
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 4px;
+  transition: width 0.4s ease-in-out;
+}
+::placeholder {
+  color: white;
+}
+
+input[type="text"]:focus {
+  width: 100%;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  margin-top: 25px;
+  background-color: blueviolet;
+  display: flex;
+  align-items: center;
+  width: 75%;
+  height: 50vh;
+}
+
+.img {
+  border: 2px solid blue;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-left: 42px;
+}
+.user-info ul {
+  display: flex;
+}
+.user-info {
+  margin-left: 58px;
+  text-align: center;
+}
+
+a {
+  background-color: blue;
+  padding: 4px;
+  margin: 12px;
+  color: white;
+}
+img {
+  max-width: fit-content;
+  max-height: fit-content;
+  border-radius: 50%;
+}
