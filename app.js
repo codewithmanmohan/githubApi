@@ -1,5 +1,6 @@
 const apiurl = "https://api.github.com/users/";
 const main = document.querySelector("#main");
+const empty = document.querySelector("#empty");
 
 const getUser = async (username) => {
   const response = await fetch(apiurl + username);
@@ -46,9 +47,16 @@ const getRepos = async (username) => {
 
 const formSubmit = () => {
   const searchbox = document.querySelector("#search");
-  if (searchbox != "") {
+
+  if (searchbox.value.trim() === "") {
+    main.innerHTML = `<div class="empty">
+   <h2>!Input field is empty. please enter a username</h2>
+</div>`;
+    return false;
+  } else {
     getUser(searchbox.value);
   }
+
   return false;
 };
 
