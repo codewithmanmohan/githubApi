@@ -49,17 +49,27 @@ const formSubmit = () => {
   const searchbox = document.querySelector("#search");
 
   if (searchbox.value.trim() === "") {
-    main.style.display = "none";
-
-    empty.innerHTML = `<div class="empty">
-   <h2>!Input field is empty. please enter a username</h2>
-</div>`;
+    showEmpty();
     return false;
   } else {
+    showMain();
     getUser(searchbox.value);
   }
 
   return false;
+};
+
+const showEmpty = () => {
+  empty.innerHTML = `<div class="empty">
+  <h2>!Input field is empty. please enter a username</h2>
+</div>`;
+  main.style.display = "none";
+  empty.style.display = "flex";
+};
+
+const showMain = () => {
+  empty.style.display = "none";
+  main.style.display = "flex";
 };
 
 /* <a href="#" target="_blank" class="repo">Repo1</a>
