@@ -49,7 +49,9 @@ const formSubmit = () => {
   const searchbox = document.querySelector("#search");
 
   if (searchbox.value.trim() === "") {
-    main.innerHTML = `<div class="empty">
+    main.style.display = "none";
+
+    empty.innerHTML = `<div class="empty">
    <h2>!Input field is empty. please enter a username</h2>
 </div>`;
     return false;
