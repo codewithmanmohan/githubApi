@@ -46,5 +46,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgements
 
 - [GitHub API](https://docs.github.com/en/rest)
-- [MDN Web Docs](https://developer.mozilla.org/en-US/)
-- [Stack Overflow](https://stackoverflow.com/)
+
